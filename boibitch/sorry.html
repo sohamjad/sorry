@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio controls>
+      <source src="nanha.opus" type="audio/mp3">
+      <source src="your-audio-file.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+  </audio>
+    <style>
+      audio {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+      body {
+          
+          background-image: url('soham.jpg');
+          
+          background-size: contain; 
+          background-position: center; 
+          background-repeat: no-repeat; 
+          
+          margin: 0;
+          font-family: Arial, sans-serif;
+          color: #ffffff; 
+      }
+
+     
+      .content {
+          padding: 20px;
+      }
+  </style>
+
+    <div class="container">
+      <div>
+        <h1 class="header_text">Do you wanna go out with me?</h1>
+      </div>
+      <div class="gif_container">
+        <img
+        src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif"
+        alt="Cute animated illustration"
+      />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+
+        <script>
+
+          
+          function nextPage() {
+            
+            window.location.href = "https://youtu.be/Z6U3tVjHcUI?si=i8rMylBuT4iolHAo";
+        }
+
+
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
+
